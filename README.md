@@ -1,0 +1,1 @@
+Practice projects for programming Bluegiga BLEXXX

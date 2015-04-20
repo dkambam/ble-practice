@@ -4,5 +4,10 @@
 	<sleep enable="true" />
 	<script enable="true" />
 
+	<!-- Both ports should be in defined states -->
+	<port index="0" tristatemask="0x00" pull="up" />
+	<port index="1" tristatemask="0x00" pull="up" />
+
 	
+
 </hardware>

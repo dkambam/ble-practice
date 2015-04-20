@@ -1,7 +1,17 @@
 # Author: Dheeraj Kambam
 
+import "states.bgs"
 
 event system_boot(major, minor, patch, build, ll_version, protocol_version, hw)
-	call gap_set_mode(gap_general_discoverable, gap_undirected_connectable)
+	call broadcast_status()
+
 	# ... Do something
+	call update_helmet_status($FE)
 end
+
+
+event connection_disconnected(connection_handle, disconnection_reason)
+	call broadcast_status()
+end
+
+

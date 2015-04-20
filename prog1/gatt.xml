@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<!-- Note: user defined UUID's are randomly generated, nothing special about them -->
 <configuration>
     
     <service uuid="1800">
@@ -13,7 +14,15 @@
         <!-- Appearance -->
         <characteristic uuid="2a01">
             <properties read="true" const="true" />
-            <value type="hex">0000</value>
+            <value type="hex">0100</value>
+        </characteristic>
+    </service>
+
+    <service uuid="c8189f27-0608-4ddd-83d1-fa000f3b46bb"> 
+        <description>ls_helmet_service</description>
+        <characteristic uuid="60b5f8d5-9e1f-49dd-9f22-1dcca40e672e" id="xgatt_status"> 
+            <properties read="true" />
+            <value length="1"/>
         </characteristic>
     </service>
 

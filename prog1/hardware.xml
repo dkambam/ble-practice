@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<hardware>
+	<sleeposc enable="true" ppm="30" />
+	<sleep enable="true" />
+	<script enable="true" />
+
+	
+</hardware>
